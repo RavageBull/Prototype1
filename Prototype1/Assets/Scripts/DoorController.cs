@@ -6,7 +6,8 @@ public class DoorController : MonoBehaviour
 {
     public GameObject Door;
     public bool doorIsOpening = true;
-
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -19,4 +20,10 @@ public class DoorController : MonoBehaviour
             doorIsOpening = false;
         }
     }
+
+  
+
+
+
+
 }
