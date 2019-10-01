@@ -19,9 +19,4 @@ public class DoorController : MonoBehaviour
             doorIsOpening = false;
         }
     }
-
-    void ()
-    {
-        doorIsOpening = true;
-    }
 }
