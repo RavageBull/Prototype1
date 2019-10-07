@@ -48,3 +48,9 @@ TagManager:
   - name: Narrator
     uniqueID: 3564888343
     locked: 0
+  - name: Objects
+    uniqueID: 419416721
+    locked: 0
+  - name: Player
+    uniqueID: 2539852885
+    locked: 0
