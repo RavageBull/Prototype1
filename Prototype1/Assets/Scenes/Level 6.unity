@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b2090473ec56c4db2f8599ddcae5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRunSpeed: 10
+  playerRunSpeed: 5
   playerJumpHeight: 8
   canInteract: 0
   extraJumps: 0
@@ -6130,6 +6130,11 @@ MonoBehaviour:
   isOpen: 0
   isChest: 0
   isFakeChest: 0
+  isPot: 0
+  isBox: 0
+  isBarrel: 0
+  playerChoice: {fileID: 0}
+  aiChoice: {fileID: 0}
 --- !u!61 &1630435662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6594,7 +6599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21f59b46ab967d469eaddc2ada519d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level 6
+  levelToLoad: Level 7
 --- !u!212 &2091940242
 SpriteRenderer:
   m_ObjectHideFlags: 0

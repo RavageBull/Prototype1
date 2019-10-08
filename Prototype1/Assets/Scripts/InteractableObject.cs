@@ -5,8 +5,13 @@ public class InteractableObject : MonoBehaviour
     public GameObject blockade;
     public Sprite spriteChange;
     public bool isOpen;
-    public bool isChest = false;
-    public bool isFakeChest = false;
+    public bool isChest;
+    public bool isFakeChest;
+    public bool isPot;
+    public bool isBox;
+    public bool isBarrel;
+    public GameObject playerChoice;
+    public GameObject aiChoice;
 
     public void DoInteraction()
     {
@@ -30,7 +35,24 @@ public class InteractableObject : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = spriteChange;
             isOpen = true;
         }
-        
+
+        if (isPot == true)
+        {
+            playerChoice.GetComponent<PlayerChosen>().potChange();
+            aiChoice.GetComponent<AiChosen>().potChange();
+        }
+
+        if (isBox == true)
+        {
+            playerChoice.GetComponent<PlayerChosen>().boxChange();
+            aiChoice.GetComponent<AiChosen>().boxChange();
+        }
+        if (isBarrel == true)
+        {
+            playerChoice.GetComponent<PlayerChosen>().barrelChange();
+            aiChoice.GetComponent<AiChosen>().barrelChange();
+        }
+
 
     }
 
