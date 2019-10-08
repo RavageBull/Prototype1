@@ -19,6 +19,7 @@ public class InteractableObject : MonoBehaviour
             if (isFakeChest == true)
             {
                 print("u died");
+
             }
         }
 

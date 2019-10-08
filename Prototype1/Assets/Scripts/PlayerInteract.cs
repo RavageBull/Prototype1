@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public GameObject currentInterObj = null;
+    public string levelToLoad;
+
 
     private void Update()
     {
@@ -33,7 +35,16 @@ public class PlayerInteract : MonoBehaviour
                 currentInterObj = null;
             }
         }
+
+        else if (other.gameObject.tag == "Death")
+        {
+            Application.LoadLevel(levelToLoad);
+        }
     }
+
+
+
+
 }
 
 
