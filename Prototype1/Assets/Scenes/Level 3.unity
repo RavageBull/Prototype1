@@ -4789,7 +4789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703424395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 0.88203406, y: 0.88203406, z: 0.88203406}
   m_Children:
   - {fileID: 1713988299}
@@ -5097,7 +5097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762308979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 8.588604, y: 9.6773, z: 9.6773}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5233,9 +5233,9 @@ MonoBehaviour:
   dialogue:
     name: 'God:'
     sentences:
-    - wtf is up my buttercup
-    - bruh
-    - why u skipping me?
+    - good, very good
+    - now I want you to fall down into the pit
+    - the door is a trap
 --- !u!114 &2016302087
 MonoBehaviour:
   m_ObjectHideFlags: 0

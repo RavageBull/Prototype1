@@ -1003,7 +1003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962705053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 8.588604, y: 9.6773, z: 9.6773}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1071,7 +1071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109884030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 0.88203406, y: 0.88203406, z: 0.88203406}
   m_Children:
   - {fileID: 1517212287}
@@ -5436,9 +5436,9 @@ MonoBehaviour:
   dialogue:
     name: 'God:'
     sentences:
-    - wtf is up my buttercup
-    - bruh
-    - why u skipping me?
+    - I want you to pass
+    - just listen to me
+    - avoid the obstacles
 --- !u!114 &2106951642
 MonoBehaviour:
   m_ObjectHideFlags: 0

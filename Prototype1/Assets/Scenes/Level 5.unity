@@ -3799,9 +3799,9 @@ MonoBehaviour:
   dialogue:
     name: 'God:'
     sentences:
-    - wtf is up my buttercup
-    - bruh
-    - why u skipping me?
+    - all you have to do
+    - is get to the door
+    - that's it
 --- !u!114 &929223013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,7 +4011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969384639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 8.588604, y: 9.6773, z: 9.6773}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5502,7 +5502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141476634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7605696, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
   m_LocalScale: {x: 0.88203406, y: 0.88203406, z: 0.88203406}
   m_Children:
   - {fileID: 1181342341}
