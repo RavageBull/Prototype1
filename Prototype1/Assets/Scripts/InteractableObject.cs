@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class InteractableObject : MonoBehaviour
 {
     public GameObject blockade;
     public Sprite spriteChange;
+    public string levelToLoad;
     public bool isOpen;
     public bool isChest;
     public bool isFakeChest;
@@ -12,6 +14,13 @@ public class InteractableObject : MonoBehaviour
     public bool isBarrel;
     public GameObject playerChoice;
     public GameObject aiChoice;
+    public AudioSource death;
+
+    void Start()
+    {
+        death = GetComponent<AudioSource>();
+    }
+
 
     public void DoInteraction()
     {
@@ -23,7 +32,11 @@ public class InteractableObject : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = spriteChange;
             if (isFakeChest == true)
             {
-                print("u died");
+                 death.Play();
+
+                 StartCoroutine(printDelay());
+                 
+                
 
             }
         }
@@ -56,4 +69,10 @@ public class InteractableObject : MonoBehaviour
 
     }
 
+    IEnumerator printDelay()
+    {
+        yield return new WaitForSeconds(1);
+        print("u died");
+        Application.LoadLevel(levelToLoad);
+    }
 }

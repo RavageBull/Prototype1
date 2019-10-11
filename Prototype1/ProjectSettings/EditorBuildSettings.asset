@@ -15,19 +15,19 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/TestRoom.unity
-    guid: 5b5c45673dd52144cb494787e3f48a34
-  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: ab3304c99600a3a4ca414f0ca03d0a98
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 6b117b53e717d9449981e3b836893b9e
   - enabled: 1
+    path: Assets/Scenes/Level 2.9.unity
+    guid: 5b5c45673dd52144cb494787e3f48a34
+  - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: 92a200a67f8ccfe40bd6c369cdeda2ba
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 5.5.unity
     guid: 6fe25149ee071954faaf4df75dcd5166
   - enabled: 1
     path: Assets/Scenes/Level 4.unity
@@ -47,4 +47,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 9.unity
     guid: d8e0ebd72688c6945acb6b952f95472b
+  - enabled: 1
+    path: Assets/Scenes/Level 5.6.unity
+    guid: a6fd5b4ae4c622947854a5881eca21d7
+  - enabled: 1
+    path: Assets/Scenes/Level 10.unity
+    guid: da64036df8aa1464094feefe7be86a57
+  - enabled: 1
+    path: Assets/Scenes/Level 0.unity
+    guid: b825ec3d702f3434794e3da5dad09499
+  - enabled: 1
+    path: Assets/Scenes/Level 4.5.unity
+    guid: 304099f486b64de4fb073c1338211c3f
   m_configObjects: {}

@@ -8,25 +8,34 @@ public class PlayerChosen : MonoBehaviour
     public Sprite spriteChange1;
     public Sprite spriteChange2;
     public Sprite spriteChange3;
+    public AudioSource lose;
     // Start is called before the first frame update
     public int scoreCount = 0;
 
+    private void Start()
+    {
+        lose = GetComponent<AudioSource>();
+    }
     public void potChange()
     {
         GetComponent<SpriteRenderer>().sprite = spriteChange1;
         Debug.Log("you lose");
+        lose.Play();
         scoreCount++;
     }
     public void boxChange()
     {
         GetComponent<SpriteRenderer>().sprite = spriteChange2;
         Debug.Log("you lose");
+        lose.Play();
         scoreCount++;
+    
     }
     public void barrelChange()
     {
         GetComponent<SpriteRenderer>().sprite = spriteChange3;
         Debug.Log("you lose");
+        lose.Play();
         scoreCount++;
     }
 

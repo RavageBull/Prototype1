@@ -6,8 +6,12 @@ public class PlayerInteract : MonoBehaviour
 {
     public GameObject currentInterObj = null;
     public string levelToLoad;
+    public AudioSource death;
 
-
+    private void Start()
+    {
+        death = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         if(Input.GetButtonDown ("Interact") && currentInterObj)
@@ -38,13 +42,16 @@ public class PlayerInteract : MonoBehaviour
 
         else if (other.gameObject.tag == "Death")
         {
-            Application.LoadLevel(levelToLoad);
+            death.Play();
+            StartCoroutine(die());
         }
     }
 
-
-
-
+    IEnumerator die()
+    {
+        yield return new WaitForSeconds(1);
+        Application.LoadLevel(levelToLoad);
+    }
 }
 
 

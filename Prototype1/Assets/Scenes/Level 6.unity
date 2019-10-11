@@ -5516,9 +5516,9 @@ MonoBehaviour:
   dialogue:
     name: 'God:'
     sentences:
-    - why are you still here?
-    - onto the next level
-    - remember impatience can be rewarding
+    - Im disapointed... in you..
+    - You dont deserve this.
+    - Dont even dare take it
 --- !u!114 &1123293354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5807,7 +5807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355671433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.8671045, y: 4.2716, z: -10}
   m_LocalScale: {x: 8.588604, y: 9.6773, z: 9.6773}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6086,7 +6086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628936169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.828269, y: 4.2716, z: -10}
+  m_LocalPosition: {x: 5.8671045, y: 4.2716, z: -10}
   m_LocalScale: {x: 0.88203406, y: 0.88203406, z: 0.88203406}
   m_Children:
   - {fileID: 1716832637}
@@ -6106,6 +6106,7 @@ GameObject:
   - component: {fileID: 1630435662}
   - component: {fileID: 1630435661}
   - component: {fileID: 1630435665}
+  - component: {fileID: 1630435666}
   m_Layer: 0
   m_Name: Medieval_props_free_5
   m_TagString: interObject
@@ -6127,14 +6128,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockade: {fileID: 213905645}
   spriteChange: {fileID: 21300012, guid: ae3918a914038694d852d0bb81f62473, type: 3}
+  levelToLoad: Level 6
   isOpen: 0
   isChest: 0
-  isFakeChest: 0
+  isFakeChest: 1
   isPot: 0
   isBox: 0
   isBarrel: 0
   playerChoice: {fileID: 0}
   aiChoice: {fileID: 0}
+  death: {fileID: 0}
 --- !u!61 &1630435662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6236,6 +6239,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269305ae5824c034a91af19fab6bb2fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1630435666
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630435660}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 42782fd862f097d4391bab76a9e101f2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1698454940
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,7 +6698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f21f59b46ab967d469eaddc2ada519d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level 7
+  levelToLoad: Level 9
 --- !u!212 &2091940242
 SpriteRenderer:
   m_ObjectHideFlags: 0
